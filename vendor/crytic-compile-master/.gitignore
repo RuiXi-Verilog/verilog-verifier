@@ -1,0 +1,6 @@
+.idea/
+crytic_compile.egg-info/
+__pycache__/
+*.pyc
+build/
+dist/
