@@ -171,11 +171,11 @@ def checks_sender_balance_in_require(node):
     return False
 
 
-def run(filename, contract_name):
+def run(filename, contract_name, **slitherargs):
     """Executes script"""
 
     # Init Slither
-    slither = Slither(filename)
+    slither = Slither(filename, **slitherargs)
 
     # Get an instance of the contract to be analyzed
     contract = get_contract_from_name(slither, contract_name)
